@@ -12,6 +12,7 @@ body {
 .carousel-item,
 .carousel-item-hidden {
   display: none;
+ 
 }
 .carousel .carousel-item img {
   width: 100%;
@@ -32,10 +33,13 @@ body {
   transform: translateY(-50%);
 }
 button {
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  opacity: 0.4;
+  opacity: 0.5;
   cursor: pointer;
 }
 #carousel-button-prev{
@@ -43,6 +47,17 @@ button {
 }
 #carousel-button-next{
     margin-right: 20px;
+}
+.carousel-text{
+    width: 100%;
+  display: flex;
+  position: absolute;
+  border: none;
+  top: 50%;
+  left:5%;
+  transform: translateY(50%);
+  color: whitesmoke;
+  text-shadow: 0px 0px 7px black;
 }
 @keyframes fadeVisibility {
     0% {
@@ -52,3 +67,4 @@ button {
         opacity: 1;
     }
 }
+
